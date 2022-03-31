@@ -1,0 +1,13 @@
+sbp\nio2\MyNIO2ExampleTests.class
+sbp\jdbc\PersonDAOTests.class
+sbp\io\MyIOExampleTests.class
+sbp\user\UserTests.class
+sbp\exceptions\WorkWithExceptionsTests.class
+sbp\http\WebServerTests.class
+sbp\http\ResponseGeneratorTests.class
+sbp\searchDuplicates\SearchDuplicatesTests.class
+sbp\collections\ArrayIteratorTests.class
+sbp\compare\CustomDigitComparatorTests.class
+sbp\compare\PersonTests.class
+sbp\collections\CustomArrayImplTest.class
+sbp\searchDuplicates\ParenthesesCheckingTests.class

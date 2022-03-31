@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-08T18:46:08 YEKT" name="sbp.collections.CustomArrayImplTest" finished-at="2022-02-08T18:46:08 YEKT" duration-ms="380">
+    <groups>
+    </groups>
+    <test started-at="2022-02-08T18:46:08 YEKT" name="Command line test" finished-at="2022-02-08T18:46:08 YEKT" duration-ms="380">
+    </test> <!-- Command line test -->
+  </suite> <!-- sbp.collections.CustomArrayImplTest -->
+</testng-results>

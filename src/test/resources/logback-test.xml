@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+        <encoder>
+            <pattern>%d{dd.MM.yyyy HH:mm:ss.SSS} [%thread] %-5level  %logger{20} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <!-- <file>slf4jlogback.log</file> -->
+        <file>slf4jlogback_tests.log</file>
+
+        <rollingPolicy
+                class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+
+            <!-- Вар.1: Имя log-файла slf4jlogback.ГГГГ-ММ-ДД.log -->
+            <fileNamePattern>slf4jlogback.%d{yyyy-MM-dd}.log</fileNamePattern>
+
+            <!-- Не включать - выскакивают ошибки Вар.2: Имя log-файла slf4jlogback_tests.log -->
+            <!-- <fileNamePattern>slf4jlogback_tests.log</fileNamePattern> -->
+
+            <!-- Храним файлы логов XX дней -->
+            <maxHistory>10</maxHistory>
+
+            <!-- Максимальный размер файлов лога X гигабайт -->
+            <totalSizeCap>1GB</totalSizeCap>
+
+        </rollingPolicy>
+        <encoder>
+
+            <!-- Вар.1: вывод информации в консоль/лог -->
+            <pattern>%d{dd.MM.yyyy HH:mm:ss.SSS} [%thread] %-5level  %logger{20} - %msg%n</pattern>
+
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
